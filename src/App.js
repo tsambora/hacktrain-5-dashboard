@@ -6,8 +6,6 @@ import {
 } from 'grommet';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Dashboard from './Dashboard';
-import EmergencyToggle from './EmergencyToggle';
-import EmergencyResult from './EmergencyResult';
 import Logo from './logo.svg'
 import { Grid, BarChart, LineChart, Help } from 'grommet-icons';
 
@@ -79,8 +77,6 @@ class App extends Component {
               <Router>
                 <div>
                   <Route exact path="/" component={Dashboard} />
-                  <Route exact path="/emergency/toggle" component={EmergencyToggle} />
-                  <Route exact path="/emergency/result" component={EmergencyResult} />
                 </div>
               </Router>
             </Box>
